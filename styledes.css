@@ -1,0 +1,91 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: white;
+}
+.main {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    
+  }
+
+.logobin {
+    padding: 5%;
+}
+
+.heading-title {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 5rem;
+}
+
+.cat {
+    border-radius: 50%; /* Circle around photos */
+    
+}
+
+
+  footer {
+    color: midnightblue;
+    text-align: right;
+    padding-right: 10%; /*Leave it to the right, appearance is cleaner */
+  }
+
+
+
+ .thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0; /* Adds some spacing between the thumbnails */
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures it takes up the full column width */
+  max-width: 680px; 
+  height: 680px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(85, 85, 249);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container:hover .overlay {
+  opacity: 70%;
+  border-radius: 50%;
+}
+
+.caption {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px; 
+  padding: 5px; /* Padding inside the caption */
+  width: fit-content; /* Adjust width to fit the text */
+}

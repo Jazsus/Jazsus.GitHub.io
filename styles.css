@@ -1,0 +1,36 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0 50px;
+    background-color: white;
+  
+  }
+  .main {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    
+  }
+
+  .logobin {
+    padding: 5%;
+  }
+
+
+  
+  h1 {
+    font-size: 5rem;
+  }
+
+
+  .heading {
+    height:7vh;
+    padding-bottom: 15%;
+  }
+
+
+
+  footer {
+    color: midnightblue;
+    text-align: right;
+    padding-right: 10%;
+  }
