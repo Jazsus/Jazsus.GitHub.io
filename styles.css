@@ -1,36 +1,138 @@
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 50px 50px 0 50px;
-    background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: white;
+  margin:0;
+  padding:0;
+
+}
+.main {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
   
-  }
-  .main {
-    flex: 1;
-    text-align: center;
-    padding: 10px 20px;
-    
+}
+.menu{
+font-size: 4rem;
+}
+.nav-item {
+padding: 5%;
+}
+
+.logobin {
+  padding: 5%;
+}
+.the-top {
+  font-size: 9rem;
+}
+
+.the-topp {
+  font-size: 6rem;
+}
+
+#parent {
+  display: flex;
+  padding: 5%;
   }
 
-  .logobin {
-    padding: 5%;
-  }
 
-
+.right{
+  width: 48%;
+  padding: 5%;
+  /* width: 500px;
+  margin: 60px auto;
+  color: midnightblue; 
+  border-radius: 50%;
+  padding: 5%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22); */
+}
+.left{
+  width: 48%;
+  padding: 5%;
   
-  h1 {
-    font-size: 5rem;
+}
+
+.Godly {
+  font-size: 5rem;
+}
+.God {
+font-size: 3rem;
+padding: 15%;
+width: 500px;
+border-radius: 50%;
+margin: 20px auto;
+color: midnightblue; 
+padding: 20px;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+
+}
+
+section{
+  position:relative;
+  width:100%;
+  height:50vh;
+  background: url(me.png);
+  background-size: 25%;
+}
+section:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: url(me.png);
+  background-size:70%;
+  opacity:.5;
+  mix-blend-mode:hard-light;
+}
+section:hover:before{
+  animation:animate .7s linear infinite;
+}
+@keyframes animate{
+  0%{
+  background-position: 0 0;
+  filter:hue-rotate(0deg);
   }
-
-
-  .heading {
-    height:7vh;
-    padding-bottom: 15%;
+  10%{
+  background-position: 5px 0;
   }
-
-
-
-  footer {
-    color: midnightblue;
-    text-align: right;
-    padding-right: 10%;
+  20%{
+  background-position: -5px 0;
   }
+  30%{
+  background-position: 15px 0;
+  }
+  40%{
+  background-position: 5px 0;
+  }
+  50%{
+  background-position: -25px 0;
+  }
+  60%{
+  background-position: -50px 0;
+  }
+  70%{
+  background-position: 0 -20px;
+  }
+  80%{
+  background-position: -60px -20px;
+  }
+  81%{
+  background-position: 0 0;
+  }
+  100%{
+  background-position: 0 0;
+  filter:hue-rotate(360deg);
+  }
+} 
+
+footer {
+  color: midnightblue;
+  text-align: right;
+  padding-right: 10%;
+  font-size: 3rem;
+}
+.d2d {
+  font-size: 7rem;
+}
