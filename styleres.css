@@ -1,148 +1,281 @@
-/* Reset styling for list items */
 * {
   list-style: none;
 }
 
-/* Body styling */
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
 
-/* Main container styling */
+body{
+    font-family: "Poppins", sans-serif; /* UNIVERSAL FONT FOR ALL PAGES */
+    margin: 50px 50px 0 50px;
+    background-color: white;
+  
+  }
+
 .main {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-}
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    
+  }
 
-/* Logo styling */
 .logobin {
-  padding: 5%;
-  border-radius: 50%;
-}
+    padding: 5%; /* MAKING SURE THE LOGO IS SHIFTED FOR PROPER PLACEMENT, 
+    DOUBLE CHECK ITS THE SAME FOR ALL CSS PAGES */
+  }
+  
 
-/* Navigation menu styling */
-.menu {
-  font-size: clamp(2rem, 4vw, 4rem);
-}
+  
+  .menu {
+    font-size: 4rem; /*FONT SIZE FOR THE NAV FONT LINKS */
+  }
+  .nav-item {
+    padding: 4%;
+  }
 
-.nav-item {
-  padding: 2%;
-}
 
-/* Flex container for centered layout */
 #parent {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-}
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
 
-/* Title styling */
-.the-top {
-  font-size: clamp(3rem, 5vw, 5rem);
+  /* TITLE PAGE STYLE */
+
+  .the-top{
+    font-size: 5rem ;
+    text-align: center;
+    padding-top: 2%;
+    color: midnightblue;
+  }
+
+
+
+/* 
+  THIS IS ALL OF THE STYLING BELOW FOR THE ANIMATION ON SKILL BARS
+  YOU EDIT THIS PORTION, YOU EDIT THEM ALL :X .....>>>>>>> */
+
+
+#skill-h1{
   text-align: center;
-  padding-top: 2%;
-  color: midnightblue;
 }
 
-/* Skill bars section */
-#skill-h1 {
-  text-align: center;
-}
-
-.skillz {
+.skillz{
   margin: 5px;
 }
 
-/* Skill container */
-.skill {
-  width: 100%;
-  max-width: 500px;
-  margin: 40px auto;
-  color: midnightblue;
+.skill{
+  width: 500px;
+  margin: 60px auto;
+  color: midnightblue; 
   padding: 20px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+
 }
 
-/* Individual skill item styling */
-.skill li {
+.skill li{
   margin: 20px 0;
   padding: 10px;
 }
-
-/* Base bar styling */
-.bar {
+.bar{
   background: #353B48;
+  display: block;
   height: 20px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-
-.bar:hover {
+.bar:hover{
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
-.bar span {
+.bar span{
   height: 20px;
   float: left;
-  background: linear-gradient(135deg, rgb(151, 7, 234) 0%, rgb(85, 85, 249) 100%);
+  background: linear-gradient(135deg, rgb(151, 7 , 234)0%, rgb(85, 85, 249)100%);
 }
 
-/* Skill levels for individual bars */
-.html { width: 90%; animation: html 3s; }
-.css { width: 80%; animation: css 3s; }
-.js { width: 75%; animation: js 3s; }
-.boost { width: 80%; animation: boost 3s; }
-.react { width: 65%; animation: react 3s; }
+/* END OF UNIVERSAL ANIMATION BAR STYLE, INDIVIDUAL BEGINS .....>>> */
 
-.rbar { width: 60%; animation: rbar 3s; }
-.pybar { width: 65%; animation: pybar 3s; }
-.colabb { width: 70%; animation: colabb 3s; }
 
-.hardware { width: 90%; animation: hardware 3s; }
-.software { width: 85%; animation: software 3s; }
-.network { width: 80%; animation: network 3s; }
 
-/* Keyframes for skill bar animations */
-@keyframes html { 0% { width: 0%; } 100% { width: 90%; } }
-@keyframes css { 0% { width: 0%; } 100% { width: 80%; } }
-@keyframes js { 0% { width: 0%; } 100% { width: 75%; } }
-@keyframes boost { 0% { width: 0%; } 100% { width: 80%; } }
-@keyframes react { 0% { width: 0%; } 100% { width: 65%; } }
 
-@keyframes rbar { 0% { width: 0%; } 100% { width: 60%; } }
-@keyframes pybar { 0% { width: 0%; } 100% { width: 65%; } }
-@keyframes colabb { 0% { width: 0%; } 100% { width: 70%; } }
 
-@keyframes hardware { 0% { width: 0%; } 100% { width: 90%; } }
-@keyframes software { 0% { width: 0%; } 100% { width: 85%; } }
-@keyframes network { 0% { width: 0%; } 100% { width: 80%; } }
+/* WEB DEV BAR STYLES */
+.html{
+  width: 90%;
+  animation: html 3s;
+}
+.css{
+  width: 80%;
+  animation: css 3s;
+}
 
-/* Footer styling */
+.js{
+  width: 75%;
+  animation: js 3s;
+}
+
+.boost{
+  width: 80%;
+  animation: boost 3s;
+}
+.react{
+  width: 65%;
+  animation: react 3s;
+}
+
+
+
+/* DATA ANALYSIS BARS */
+
+
+.rbar{
+  width: 60%;
+  animation: rbar 3s;
+}
+.pybar{
+  width: 65%;
+  animation: pybar 3s;
+}
+.colabb{
+  width: 70%;
+  animation: colabb 3s;
+}
+
+
+/* INFO TECH STYLE BARS */
+
+.hardware{
+  width: 90%;
+  animation: hardware 3s;
+}
+.software{
+  width: 85%;
+  animation: software 3s;
+}
+.network{
+  width: 80%;
+  animation: network 3s;
+}
+
+/* THIS IS THE KEYFRAMES SECTION FOR MOVEMENT 
+ON EACH BAR DBL CHECK NAMES ON 
+BOTH BELOW AND ABOVE, THEY NEED 
+TO MATCH ALL THROUGHOUT
+IF YOU RUN INTO PROBLEMS */
+
+
+/* WEB DEV KEYFRAME */
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+@keyframes js {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+
+@keyframes boost {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+@keyframes react {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+
+/* DATA ANALYSIS KEYFRAMES */
+
+@keyframes rbar {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+@keyframes pybar {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+@keyframes colabb {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+/* INFO TECH KEYFRAMES */
+
+@keyframes hardware {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes software {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes network {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+
+
+/* THIS IS THE END OF ALL BARS ANIMATION  */ 
+
+
+
+
+
+
 footer {
-  color: midnightblue;
-  text-align: right;
-  padding: 2% 10%;
-  font-size: clamp(1rem, 2vw, 2rem);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .skill {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .bar {
-    height: 16px;
-  }
-  .logobin {
-    height: 320px;
-  }
-}
+    text-align: right;
+    padding-right: 10%;
+  } can you do the same here too
