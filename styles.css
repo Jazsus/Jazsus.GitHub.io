@@ -1,138 +1,130 @@
+/* Reset basic body styling */
 body {
   font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
+  margin: 0;
+  padding: 0;
   background-color: white;
-  margin:0;
-  padding:0;
-
 }
+
+/* Main container styling */
 .main {
   flex: 1;
   text-align: center;
-  padding: 10px 20px;
-  
-}
-.menu{
-font-size: 4rem;
-}
-.nav-item {
-padding: 5%;
+  padding: 20px;
 }
 
-.logobin {
-  padding: 5%;
+/* Navigation and header text styling */
+.menu {
+  font-size: 2.5rem;
 }
+
+.nav-item {
+  padding: 2%;
+}
+
+/* Logo container styling */
+.logobin {
+  padding: 2%;
+}
+
+/* Large heading text styling with responsive adjustments */
 .the-top {
-  font-size: 9rem;
+  font-size: clamp(5rem, 8vw, 9rem);
 }
 
 .the-topp {
-  font-size: 6rem;
+  font-size: clamp(3.5rem, 6vw, 6rem);
 }
 
+/* Flex container for side-by-side sections */
 #parent {
   display: flex;
-  padding: 5%;
-  }
-
-
-.right{
-  width: 48%;
-  padding: 5%;
-  /* width: 500px;
-  margin: 60px auto;
-  color: midnightblue; 
-  border-radius: 50%;
-  padding: 5%;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22); */
+  flex-wrap: wrap;
+  padding: 2%;
 }
-.left{
-  width: 48%;
-  padding: 5%;
-  
+
+/* Right and Left section styling with responsive width adjustments */
+.right,
+.left {
+  flex: 1 1 48%;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.right {
+  color: midnightblue;
 }
 
 .Godly {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 5vw, 5rem);
 }
+
 .God {
-font-size: 3rem;
-padding: 15%;
-width: 500px;
-border-radius: 50%;
-margin: 20px auto;
-color: midnightblue; 
-padding: 20px;
-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
-
+  font-size: clamp(2rem, 5vw, 3rem);
+  padding: 5%;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+  margin: 20px auto;
+  color: midnightblue;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
 }
 
-section{
-  position:relative;
-  width:100%;
-  height:50vh;
+/* Section styling with background and animation */
+section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
   background: url(me.png);
-  background-size: 25%;
+  background-size: cover;
+  background-position: center;
 }
-section:before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: url(me.png);
-  background-size:70%;
-  opacity:.5;
-  mix-blend-mode:hard-light;
-}
-section:hover:before{
-  animation:animate .7s linear infinite;
-}
-@keyframes animate{
-  0%{
-  background-position: 0 0;
-  filter:hue-rotate(0deg);
-  }
-  10%{
-  background-position: 5px 0;
-  }
-  20%{
-  background-position: -5px 0;
-  }
-  30%{
-  background-position: 15px 0;
-  }
-  40%{
-  background-position: 5px 0;
-  }
-  50%{
-  background-position: -25px 0;
-  }
-  60%{
-  background-position: -50px 0;
-  }
-  70%{
-  background-position: 0 -20px;
-  }
-  80%{
-  background-position: -60px -20px;
-  }
-  81%{
-  background-position: 0 0;
-  }
-  100%{
-  background-position: 0 0;
-  filter:hue-rotate(360deg);
-  }
-} 
 
+section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(me.png);
+  background-size: cover;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
+section:hover:before {
+  animation: animate 0.7s linear infinite;
+}
+
+@keyframes animate {
+  0% { background-position: 0 0; filter: hue-rotate(0deg); }
+  100% { background-position: 0 0; filter: hue-rotate(360deg); }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 81% { /* Add key positions for movement */ }
+}
+
+/* Footer styling */
 footer {
   color: midnightblue;
   text-align: right;
-  padding-right: 10%;
-  font-size: 3rem;
+  padding: 2%;
+  font-size: clamp(1.5rem, 3vw, 3rem);
 }
+
+/* Large text styling */
 .d2d {
-  font-size: 7rem;
+  font-size: clamp(3rem, 7vw, 7rem);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #parent {
+    flex-direction: column;
+    padding: 5%;
+  }
+  
+  .right, .left {
+    width: 100%;
+    padding: 5%;
+  }
 }
