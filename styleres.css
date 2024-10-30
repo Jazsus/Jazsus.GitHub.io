@@ -278,4 +278,19 @@ IF YOU RUN INTO PROBLEMS */
 footer {
     text-align: right;
     padding-right: 10%;
-  } can you do the same here too
+  } 
+
+
+  @media (max-width: 768px) {
+    .skill {
+      width: 90%;
+      margin: 20px auto; /* Smaller margin for mobile view */
+    }
+    
+    .skillz {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Adds space between stacked containers */
+    }
+  }
