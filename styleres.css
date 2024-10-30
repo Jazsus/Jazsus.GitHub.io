@@ -136,10 +136,13 @@ footer {
 @media (max-width: 768px) {
   .skill {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
   }
   
   .bar {
     height: 16px;
+  }
+  .logobin {
+    height: 320px;
   }
 }
