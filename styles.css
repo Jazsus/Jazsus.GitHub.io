@@ -2,7 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 2;
   background-color: white;
 }
 
@@ -30,10 +30,12 @@ body {
 /* Large heading text styling with responsive adjustments */
 .the-top {
   font-size: clamp(4rem, 8vw, 7rem);
+  padding-bottom: 2%;
 }
 
 .the-topp {
   font-size: clamp(2.5rem, 6vw, 4rem);
+  padding-bottom: 2%;
 }
 
 /* Flex container for side-by-side sections */
@@ -63,7 +65,7 @@ body {
   font-size: clamp(2rem, 5vw, 3rem);
   padding: 5%;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 50%;
   margin: 20px auto;
   color: midnightblue;
@@ -108,7 +110,7 @@ footer {
   color: midnightblue;
   text-align: right;
   padding: 2%;
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1rem, 3vw, 3rem);
 }
 
 /* Large text styling */
