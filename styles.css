@@ -109,9 +109,10 @@ section:hover:before {
 footer {
   color: midnightblue;
   text-align: right;
-  padding: 2%;
-  font-size: clamp(1rem, 3vw, 3rem);
+  padding: 2% 10%;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
+
 
 /* Large text styling */
 .d2d {
