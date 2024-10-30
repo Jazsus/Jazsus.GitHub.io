@@ -92,7 +92,7 @@ section:before {
   background: url(me.png);
   background-size: cover;
   opacity: 0.5;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: multiply;
 }
 
 section:hover:before {
