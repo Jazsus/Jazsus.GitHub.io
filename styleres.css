@@ -63,6 +63,7 @@ body{
 }
 
 .skill{
+  flex-wrap: wrap;
   width: 500px;
   margin: 60px auto;
   color: midnightblue; 
