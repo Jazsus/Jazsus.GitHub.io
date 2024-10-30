@@ -132,4 +132,7 @@ footer {
   .logobin {
     height: 320px;
   }
+  footer {
+    font-size: clamp(.5rem, 2vw, 1rem);
+  }
 }
