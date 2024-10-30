@@ -294,4 +294,7 @@ footer {
       align-items: center;
       gap: 20px; /* Adds space between stacked containers */
     }
+    .logobin {
+      height: 320px;
+    }
   }
