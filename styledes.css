@@ -114,7 +114,7 @@ footer {
   }
   
   .img-container {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
   }
   
